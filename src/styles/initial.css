@@ -1,0 +1,40 @@
+h{
+    color: white;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+p{
+    color: white;
+    font-size: large;
+ 
+}
+
+button{
+    color: aliceblue;
+    background-color: #0f79af;
+    padding: 1rem;
+}
+
+init-parent{
+
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+init-c1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+init-c2{
+    height: 100%;
+    width: 50%;
+}
