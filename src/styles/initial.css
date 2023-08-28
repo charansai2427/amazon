@@ -1,40 +1,508 @@
-h{
-    color: white;
-    font-size: xx-large;
-    font-weight: 800;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,900&family=Red+Hat+Display:ital,wght@0,600;0,700;1,500&display=swap');
 
-p{
-    color: white;
-    font-size: large;
+
+.heaven{
+    height:89vh;
+    width:50vw;
+  position: absolute;
+  top:3.4em;
+  right: -1em;
+  z-index: -1;
  
+    }
+
+.title{
+    font-size: 45px;
+    font-style:'Montserrat';
+
+    color: white;
+    position: absolute;
+    top:1.5em;
+    left:75px;
+
+} 
+
+.content{
+    font-size:25px;
+    color: white;
+    text-align: start;
+    position: absolute;
+    top:6em;
+    left:80px;
+    
 }
 
-button{
-    color: aliceblue;
-    background-color: #0f79af;
-    padding: 1rem;
-}
-
-init-parent{
-
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-
-}
-
-init-c1{
+.banner-container{
     display: flex;
-    justify-content: center;
+
     align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
+    justify-content: space-between;
+
 }
 
-init-c2{
-    height: 100%;
-    width: 50%;
+ .banner{
+    height:60vh;
+    width:49.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top:2em;
+    left:0em;
+    padding: 19.5rem;
+    color: aliceblue
+} 
+
+.sign-btn{
+    width:17em;
+    height:6vh;
+    font-size:20px;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+    position: absolute;
+    top:11.5em;
+    left:4em;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 0.3em;
+    background-color: rgb(15,121,175);
+}
+
+.rent{
+    width:55vw;
+    height:80.4vh;
+    position: absolute;
+    top:47em;
+    left:0em;
+    z-index: -1;
+
+}
+
+.ban2{
+    height:3vh;
+    width:50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19.5rem;
+    color: aliceblue;
+    position: relative;
+    top:41.5em;
+    right:0em;
+}
+
+.title2{
+    color:white;
+    font-size: 40px;
+    font-style:'Montserrat';
+    position: absolute;
+    top:2em;
+    left:-1em;
+}
+
+.content2{
+    color:white;
+    font-size: 25px;
+    position: absolute;
+    top:6.5em;
+    left:-1.5em;
+}
+
+.rent-btn{
+   width:20vw;
+   height:7vh;
+    font-size:20px;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+    position: absolute;
+    top:13em;
+    right:1em ;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 0.5em;
+    background-color: rgb(15,121,175);
+    z-index: -1;
+}
+
+.cards{
+    width:40vw;
+    color: white;
+    font-size: 40px;
+    font-style:'Montserrat';
+font-stretch: expanded;
+text-align: start;
+    position: absolute;
+    top:36em;
+    left:1em;
+}
+
+.ban3{
+    width:50vw;
+    font-size: 27px;
+
+    color:white;
+    position: absolute;
+    top:56em;
+    left:0em;
+}
+
+.ban-3{
+    width:50vw;
+        font-size: 27px;
+        color:white;
+        position: absolute;
+        top:58em;
+        left:0em;
+}
+
+.bann-3{
+
+
+        font-size: 27px;
+        color:white;
+        position: absolute;
+        top:60em;
+        left:0em;
+}
+
+.LionsgatePlay{
+    width:15vw;
+    position: absolute;
+    top:87.2em;
+    left:51em;
+   transition: box-shadow .3s;
+   background:white;
+   cursor: pointer;
+
+}
+
+.LionsgatePlay:hover{
+    box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.Discovery{
+    width:15vw;
+    position: absolute;
+    top:87.2em;
+    right:22em;
+   transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.Discovery:hover{
+     box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.Erosnow{
+    width:15vw;
+    position: absolute;
+    top:87.2em;
+    right:5.5em;
+   transition: box-shadow .3s;
+   background:white;
+   cursor: pointer;
+}
+
+.Erosnow:hover{
+      box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.MANORAMAMAX{
+    width:15vw;
+    position: absolute;
+    top: 98.6em;
+    left:51em;
+
+   transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.MANORAMAMAX:hover{
+    box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.hoichoi{
+    width:15vw;
+    position: absolute;
+    top: 98.6em;
+    right:22em;
+  transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.hoichoi:hover{
+       box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.Vrott{
+    width:15vw;
+    position: absolute;
+    top: 98.6em;
+    right:5.5em;   transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.Vrott:hover{
+   box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.Amc{
+    width:15vw;
+    position: absolute;
+    top:110.1em;
+    left:51em;
+   transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.Amc:hover{
+      box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.Docubay{
+    width:15vw;
+    position: absolute;
+    top:110.1em;
+    right:22em;
+  transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.Docubay:hover{
+    
+   box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.Mubi{
+    width:15vw;
+    position: absolute;
+    top:110.1em;
+    right:5.5em; 
+   transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.Mubi:hover{
+    
+       box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0);
+}
+
+.iWonder{
+    width:15vw;
+    position: absolute;
+    top:121.6em;
+    left:51em;
+   transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.iWonder:hover{
+    
+    box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.Stingray{
+    width:15vw;
+    position: absolute;
+    top:121.6em;
+    right:22em;
+   transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.Stingray:hover{
+    
+   box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.CuriosityStream{
+    width:15vw;
+    position: absolute;
+    top:121.6em;
+    right:5.5em; 
+   transition: box-shadow .3s;
+   background: white;
+   cursor: pointer;
+}
+
+.CuriosityStream:hover{
+    
+      box-shadow: -5px -5px 10px 0px rgba(190, 186, 186, 0.5);
+    transform:scale(1.0) ;
+}
+
+.stick{
+  width:50vw;
+    position: absolute;
+    top:133.5em;
+    left:0em;
+    z-index: -1;
+}
+.bn4{
+    height:18em;
+    width:20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19.5rem;
+    color: aliceblue;
+    position: relative;
+    top:127.5em;
+    right:15em;
+z-index: -1;
+}
+
+.stick-1{
+    color: white;
+    font-size: 50px;
+    font-style:'Montserrat';
+  
+    position: absolute;
+    top:44em;
+    right:5.5em;
+
+}
+.ban4{
+    width:40vw;
+    color: white;
+    font-size: 23px;
+    /* font-style:'Montserrat'; */
+    text-align: start;
+    position: absolute;
+    top:9em;
+    right:8em;
+}
+
+
+
+.get-btn{
+    width:16em;
+    height:8vh;
+    font-size:20px;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+    position: absolute;
+    top:18em;
+    right: 27em;
+    border: 0;
+    border-radius: 1px;
+    padding-top: 1em;
+    background-color: rgb(15,121,175);
+    z-index: 1;
+}
+
+
+.family{
+    height:20.1vh;
+    width:21vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19.5rem;
+    color: aliceblue;
+    position: absolute;
+    top:174.5em;
+    left:0em;
+    z-index: -1;
+}
+
+.ban-5{
+    width:43vw;
+    color: white;
+    font-size: 23px;
+    text-align: start;
+    position: absolute;
+    top:11em;
+    left:2em;
+}
+
+
+.friendly{
+    width:51vw;
+    color: white;
+    font-size: 50px;
+    font-style:'Montserrat';
+    position: absolute;
+    text-align: start;
+    top:58.5em;
+    left:2em;
+}
+
+.Get-btn{
+    width:20vw;
+    height:8vh;
+     font-size:20px;
+     text-align: center;
+     color:white;
+     cursor: pointer;
+     position: absolute;
+    top:19em;
+    left:3em;
+    border: 0;
+    border-radius: 1px;
+    padding-top: 1em;
+    background-color: rgb(15,121,175);
+    z-index: 1;
+}
+
+.ban5{
+    height: 98.5vh;
+    width:51vw;
+    position: absolute;
+    top:175em;
+    right:-1em;
+    z-index: -1;
+}
+
+
+.end{
+    width:100vw;
+    height:20vh;
+ background-color: rgb(34,34,34);
+
+ position: absolute;
+ top:220em;
+ left:0
+}
+.pvl{
+position: absolute;
+top:1em;
+left:41em;
+}
+.help{
+    color:rgb(15,121,175) ;
+    position: absolute;
+    top:4em;
+    left:45em;
+    cursor: pointer;
+}
+.inc{
+    color: gray;
+    position: absolute;
+    top:6em;
+    left:45em;
+
 }
