@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
 
-
 import { baseurl } from '../utils/api';
 const Navbar = () => {
     const [userDetails, setUserDetails]= useState({});
