@@ -1,22 +1,350 @@
-.parent-class {
-    position: sticky;
-    top: 15px;
-    z-index: 5000;
+*
+    body
+    {
+        width: 100%;
+        height:100vh;
+    }
+    .navbar{
+       height:7vh;
+       width:100vw;
+        background-color: #00050d;
+        position: fixed;
+        top:0;
+        left:0;
+    }
+
+
+    .img{
+      color: rgb(233, 233, 233);
+      font-size: 1.2em;
+      cursor: pointer;
+      margin: 0;
+      position: relative;
+      top:0.5em;
+      left:250px;
+    }
+
+    .dropbtn {
+        /* background-color: transparent; */
+        color:grey;
+        font-size: 1.5em;
+         border: 0;
+        outline: none;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0%;
+        margin:0;
+        position: absolute;
+        top: -4.3em;
+        left: -165px;
+        
+      }
+      
+      .dropdown {
+        position: absolute;
+        display: inline-block;
+        color:grey;
+        font-size: 1.1em;
+      }
+      
+      .dropdown-content {
+        width:7em;
+        font-size: 1.2em;
+        display: none;
+        position: absolute;
+        top:-3.5em;
+        left:-180px;
+        background-color: #191e25;
+        border-radius: 20px;
+       text-align: start;
+       z-index: -1;
+
+
+      }
+      
+      .dropdown-content a {
+        color:grey;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {color:black;background-color: white;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+     
+         .dropdown:hover .dropbtn {color:rgb(255, 252, 252); opacity: 50%;}
+      
+
+
+      .downbtn {
+        /* background-color: transparent; */
+        color:grey;
+        font-size: 1.5em;
+         border: 0;
+        outline: none;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0%;
+        margin:0;
+        position: absolute;
+        top: -0.5em;
+        left: 570px;
+      }
+      
+      .drop {
+        position: absolute;
+        display: inline-block;
+        color:grey;
+        font-size: 1.1em;
+      }
+      
+      .drop-content {
+        width:7em;
+        font-size: 1.2em;
+        display: none;
+        position: absolute;
+        top:1em;
+        left:550px;
+        background-color: #191e25;
+        border-radius: 20px;
+       text-align: start;
+      }
+      
+      .drop-content a {
+        color:grey;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .drop-content a:hover {color:black;background-color: white;}
+      
+      .drop:hover .drop-content {display: block;}
+      
+      .drop:hover .downbtn {color:rgb(255, 255, 255);}
+      
+
+      .tv{
+        font-size: 1.5em;
+        color:gray;
+
+        margin: 0;
+        position: absolute;
+        top: 0.8em;
+        left: 700px;
+        cursor: pointer;
+        &:hover{
+          cursor: pointer;
+          color:white;
+        }
+      }
+
+
     
+      .drop2 .downbtn2 {
+        border: none;
+        outline: none;
+        color:gray;
+        padding: 16px 16px;
+        font: inherit;
+        margin: 0 auto;
+        cursor: pointer;
+        position: absolute;
+        top: 0.1em;
+        left: 800px;
+        font-size: 1.5em;
+        &:hover{
+          color:white;
+        }
+      }
+      
+      .downbtn2{
+        font-size: 1.5em;
+      }
+      .drop2-content {
+        display: none;
+        width: 70%;
+        z-index: 1;
+        margin:0;
+        position: absolute;
+        top:3.4em;
+        left: 250px;
+font-size: 1em;
+      }  
+      .drop2:hover .drop2-content {
+        display: block;
+  
+      }
+     
+      .column {
+        float: left;
+        width: 24.24%;
+        background-color:white;
+        height: 450px;
+      }
+      
+    
+      .column a {
+        font-size: 1.2em;
+        float: none;
+        color:gray;
+        padding:15px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+      
+      .column a:hover {
+        background-color: white;
+        color:#191e25;
+        border:1px;
+        border-radius:40px;
+      }
+
+      .gen{
+        color:white;
+        font-size: 1.5em;
+      }
+      .feature{
+        color:white;
+        font-size: 1.5em;
+      }
+
+      .drop3 .downbtn3 {
+        border: none;
+        outline: none;
+        color:gray;
+        padding: 16px 16px;
+        font: inherit;
+        margin: 0 auto;
+        cursor: pointer;
+        position: absolute;
+        top: 0.3em;
+        right:420px;
+        font-size: 1.5em;
+        &:hover{
+          color:antiquewhite;
+        }
+      }
+
+      .drop3-content {
+        display: none;
+        width: 70%;
+        z-index: 1;
+        margin:0;
+        position: absolute;
+        top:3.5em;
+        left: 200px;
+
+      }  
+      .drop3:hover .drop3-content {
+        display: block;
+        /* z-index: 1; */
+      
+      }
+     
+      .column {
+        float: left;
+        width: 24.24%;
+        background-color:#191e25;
+        /* height: 450px; */
+      }
+      
+      .column a {
+        font-size: 1.2em;
+        float: none;
+        color:gray;
+        padding:15px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+      
+      .column a:hover {
+        background-color: white;
+        color:#191e25;
+        border:1px;
+        border-radius:40px;
+
+
+      }
+
+.search{
+  font-size: 1.8em;
+  color: gray;
+  position: absolute;
+  top:0.5em;
+left:1000px;
+&:hover{
+color:white;
+}
 }
 
+      .try{
+        color: gray;
+        position: absolute;
+        top:0.8em;
+        right:500px;
+        &:hover{
+          color:white;
+        }
+      }
 
-.nav-parent {
-    display: flex;
-    border: 2px solid black;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem;
-    margin: 1rem 3rem;
-    border-radius: 10px;
-    background-color: #00050d;
 
-}
+      .profile-btn {
+        height: 40px;
+        width: 40px;
+        color:rgb(61,91,116);
+        background-color: white;
+        font-size: 1em;
+         border: none;
+        outline: none;
+        cursor: pointer;
+        display: inline-block; 
+         padding: 0%;
+        margin:0;
+        position: absolute;
+        top: -1em;
+        left: 1300px;
+        border-radius: 50%;
+  
+      }
+      
+      .profile {
+        position: absolute;
+        /* display: inline-block; */
+        color:grey;
+        font-size: 1em;
+      }
+      
+      .profile-content {
+        width:10em;
+        font-size: 1.2em;
+        display: none;
+        position: absolute;
+        top:1.5em;
+        left:1200px;
+        background-color: #191e25;
+        border-radius: 30px;
+       text-align: start;
+
+      }
+      
+      .profile-content a {
+        color:grey;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .profile-content a:hover {color:black;background-color: white;}
+      
+      .profile:hover .profile-content {display: block;}
+     
+
+
+
 
 .nav-search {
     display: flex;
@@ -26,65 +354,22 @@
     width: 30%;
 }
 
-.nav-end {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-
-}
-
-select {
-    border: 0;
-    outline: none;
-    background-color: #00050d;
-    color: rgb(143, 143, 143);
-
-}
-
-option {
-    color: rgb(249, 249, 249);
-    background-color: black;
-}
-
-select:hover {
-    color: white;
-}
-
-b {
-    color: rgb(143, 143, 143);
-}
-
-b:hover {
-    color: white;
-
-}
-
-.open {
-    display: block;
-}
-
 .notopen {
     display: none;
-}
+} 
 
 .search-btn {
     color: white;
     height: 1rem;
     width: 1rem;
-}
+    position: relative;
+    top:-5.7em;
+    right:15em;
+} 
 
 .search-btn:hover {
     scale: 1.5;
 }
-
-.user {
-    color: white;
-    height: 1rem;
-    width: 2rem;
-}
-
-
 
 .inpsearch {
     border: 8px solid #191e25;
@@ -124,4 +409,12 @@ b:hover {
     background-color: #33373d;
     height: 1.6rem;
     width: 1rem;
+}
+
+.pay{
+    position: absolute;
+    top:1em;
+    right:10em;
+border:none;
+outline: none;
 }
