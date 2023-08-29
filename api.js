@@ -1,0 +1,1 @@
+export const baseurl = "hhttp://server-charan.codingschool.org.in/";
