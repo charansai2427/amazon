@@ -17,7 +17,7 @@
 
     color: white;
     position: absolute;
-    top:1.5em;
+    top:3em;
     left:75px;
 
 } 
@@ -27,7 +27,7 @@
     color: white;
     text-align: start;
     position: absolute;
-    top:6em;
+    top:8.5em;
     left:80px;
     
 }
@@ -61,7 +61,7 @@
     color:white;
     cursor: pointer;
     position: absolute;
-    top:11.5em;
+    top:15em;
     left:4em;
     border: 0;
     border-radius: 5px;
@@ -490,19 +490,19 @@ z-index: -1;
 .pvl{
 position: absolute;
 top:1em;
-left:41em;
+left:48em;
 }
 .help{
     color:rgb(15,121,175) ;
     position: absolute;
     top:4em;
-    left:45em;
+    left:52em;
     cursor: pointer;
 }
 .inc{
     color: gray;
     position: absolute;
     top:6em;
-    left:45em;
+    left:52em;
 
 }
