@@ -2,15 +2,14 @@ import React from 'react';
 import { useState } from 'react';
 import { BsSearch } from "react-icons/bs"
 import { login } from '../redux/slices/userSlice';
-
 import "../styles/navbar.css";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
 
+
 import { baseurl } from '../utils/api';
 const Navbar = () => {
-    const [userDetails, setUserDetails]= useState({});
     const [isOpen, setIsopen] = useState(false);
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -20,25 +19,29 @@ const Navbar = () => {
                 title: "tvshows",
                 desc: "payment of movie",
                 price: 3000,
-    
+                
                 _id: "8698635669",
                 duration: "1 year"
-    
+                
             })
             window.location.assign(data.url)
         }
         catch(e){console.log(e)}
     }
     const handleSubmit =(e)=>{
-        e.preventDefault();
-        dispatch(login({userDetails, navigate}))
+        window.location.href="/login"
       }
-
+      const handleReload =(e =>{
+        window.location.href="/startpage"
+      })
+      const handleMovies = (e)=>{
+        window.location.href='/primepage'
+      }
     return (
 
         <div className='navbar'>
         <div className='img'>
-            <h3 className='logo' >prime video</h3>
+            <h3 className='logo' onClick={handleReload}>prime video</h3>
         </div>
         
     
@@ -46,8 +49,8 @@ const Navbar = () => {
                 <p className="dropbtn">Home </p>
                 <div className="dropdown-content">
                   <a href="#">All</a>
-                  <a href="/home">Movies</a>
-                  <a href="/home">Tv Shows</a>
+                  <a href="/primepage" onClick={handleMovies}>Movies</a>
+                  <a href="/primepage" onClick={handleMovies}>Tv Shows</a>
                 </div>
               </div>
               
