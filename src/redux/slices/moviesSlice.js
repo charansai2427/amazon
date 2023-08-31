@@ -39,7 +39,7 @@ builder.addCase(moviedetails.rejected,(state,action)=>{
 
 export const movies = createAsyncThunk("/movies", async () => {
 
-    const {data} = await axios.get(baseurl +"/movie/movies")
+    const {data} = await axios.get(baseurl +"/movie/moviesAll")
 return data;
 })
 
