@@ -19,7 +19,16 @@
       font-size: 1.2em;
       cursor: pointer;
       margin: 0;
-      position: relative;
+      position: absolute;
+      top:0.5em;
+      left:500px;
+    }
+    .logo{
+      color: rgb(233, 233, 233);
+      font-size: 1.2em;
+      cursor: pointer;
+      margin: 0;
+      position: absolute;
       top:0.5em;
       left:250px;
     }
@@ -36,7 +45,7 @@
         margin:0;
         position: absolute;
         top: -4.3em;
-        left: -165px;
+        left: -210px;
         
       }
       
@@ -88,8 +97,8 @@
         padding: 0%;
         margin:0;
         position: absolute;
-        top: -0.5em;
-        left: 570px;
+        top: -0.8em;
+        left: 590px;
       }
       
       .drop {
@@ -169,7 +178,7 @@
         z-index: 1;
         margin:0;
         position: absolute;
-        top:3.4em;
+        top:4.4em;
         left: 250px;
 font-size: 1em;
       }  
@@ -235,8 +244,8 @@ font-size: 1em;
         z-index: 1;
         margin:0;
         position: absolute;
-        top:3.5em;
-        left: 200px;
+        top:4.5em;
+        left: 300px;
 
       }  
       .drop3:hover .drop3-content {
@@ -249,7 +258,7 @@ font-size: 1em;
         float: left;
         width: 24.24%;
         background-color:#191e25;
-        /* height: 450px; */
+        height: 500px;
       }
       
       .column a {
@@ -307,7 +316,7 @@ color:white;
         margin:0;
         position: absolute;
         top: -1em;
-        left: 1300px;
+        left: 95em;
         border-radius: 50%;
   
       }
@@ -325,7 +334,7 @@ color:white;
         display: none;
         position: absolute;
         top:1.5em;
-        left:1200px;
+        left:77em;
         background-color: #191e25;
         border-radius: 30px;
        text-align: start;
@@ -417,5 +426,13 @@ color:white;
     top:1em;
     right:10em;
 border:none;
+outline: none;
+}
+
+.sub{
+  position: absolute;
+  top:1em;
+  right:5em;
+border:0;
 outline: none;
 }
