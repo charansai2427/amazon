@@ -1,29 +1,27 @@
 import React from 'react';
 import { useState } from 'react';
 import { BsSearch } from "react-icons/bs"
-import { login } from '../redux/slices/userSlice';
 import "../styles/navbar.css";
-import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import axios from 'axios';
-
 
 import { baseurl } from '../utils/api';
 const Navbar = () => {
     const [isOpen, setIsopen] = useState(false);
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
+
     const handleNav = async(e) => {
         try{
             const {data} = await axios.post(baseurl + '/payment/checkout', {
                 title: "tvshows",
                 desc: "payment of movie",
                 price: 3000,
-                
                 _id: "8698635669",
                 duration: "1 year"
                 
             })
+            const cs_id = localStorage.setItem("cs_id",data.id);
+
+      //   baseurl + "/payment/session/" + data.id
+      // );   
             window.location.assign(data.url)
         }
         catch(e){console.log(e)}
@@ -32,7 +30,7 @@ const Navbar = () => {
         window.location.href="/login"
       }
       const handleReload =(e =>{
-        window.location.href="/startpage"
+        window.location.href="/"
       })
       const handleMovies = (e)=>{
         window.location.href='/primepage'
@@ -179,7 +177,7 @@ const Navbar = () => {
 </div>
 
 <div className='pay'>
-    <select onChange={(e) => handleNav(e)}>
+    <select className='sub' onChange={(e) => handleNav(e)}>
         <option value="/payment">susbscribe</option>
         <option value="/payment">Help</option>
         <option value="/payment">Accounts</option>
@@ -190,7 +188,6 @@ const Navbar = () => {
 </div>
 
 <div className={`inpsearch ${isOpen ? "open" : "notopen"}`}>
-
 <div className='inp-search'>
     <BsSearch className='searchbar' />
     <input type='text' placeholder='Search' className='input-search' />
